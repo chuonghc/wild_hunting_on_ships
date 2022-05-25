@@ -12,10 +12,15 @@ public class Savage extends Actor
     
     protected int Velocity;
     
+    protected int SpearVelocity;
+    
+    protected int SpearDamage;
+    
     public Savage(int hp, int velocity)
     {
         HP = hp;
         Velocity = velocity;
+        SpearVelocity = 7; SpearDamage = 34;
     }
     /**
      * Act - do whatever the Savage wants to do. This method is called whenever
@@ -46,6 +51,6 @@ public class Savage extends Actor
     
     public void Shot(int targetX, int targetY)
     {
-        getWorld().addObject(new Spear(targetX,targetY,10,10),getX(),getY());
+        getWorld().addObject(new Spear(targetX,targetY,SpearVelocity,SpearDamage),getX(),getY());
     }
 }

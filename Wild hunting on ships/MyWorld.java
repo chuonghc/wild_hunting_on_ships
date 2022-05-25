@@ -20,8 +20,7 @@ public class MyWorld extends World
 
         addObject(new MainHero(100,3), 100, 100);
         addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
-        addObject(new enemy(100,3), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(800));
+
         prepare();
     }
     
